@@ -13,7 +13,6 @@ const Login = () => {
     const handleChange = e => {
         e.target.checked ? setCheck(true) : setCheck(false);
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
     }
@@ -26,7 +25,6 @@ const Login = () => {
     const createUserLogin = (uEmail, uPass) => {
         registerUser(uEmail, uPass);
     }
-
     const letUserLogin = (uEmail, uPass) => {
         loginUser(uEmail, uPass);
     }
@@ -62,7 +60,6 @@ const Login = () => {
                     </Form.Group>
                 </Form>
             </div>
-
         </div >
     );
 };

@@ -12,7 +12,6 @@ const useFirebase = () => {
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-
                 setUser(result.user);
                 console.log(result.user);
                 // ...
@@ -32,7 +31,6 @@ const useFirebase = () => {
     const registerUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
-
                 setUser(result.user);
                 console.log(result.user);
                 // ...
@@ -48,7 +46,6 @@ const useFirebase = () => {
     const loginUser = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
-
                 setUser(result.user);
             })
             .catch((error) => {
@@ -60,7 +57,6 @@ const useFirebase = () => {
     }
 
     const logOut = () => {
-
         signOut(auth)
             .then(() => {
                 setUser({});

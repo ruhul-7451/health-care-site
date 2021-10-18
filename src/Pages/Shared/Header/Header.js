@@ -28,7 +28,9 @@ const Header = () => {
                                 user.email && <Navbar.Text className="text-warning">
                                     Hello! {user.displayName ? <span className="text-info">{user.displayName}</span> : <span className="text-info">User</span>}</Navbar.Text>
                             }
-                            {user.email ? <Nav.Link as={Link} to="/home" onClick={logOut} className="btn btn-danger ms-3 text-light">{logOutLogo} Logout</Nav.Link> : <Nav.Link as={Link} to="/login" className="text-light">Login</Nav.Link>}
+                            {
+                                user.email ? <Nav.Link as={Link} to="/home" onClick={logOut} className="btn btn-danger ms-3 text-light">{logOutLogo} Logout</Nav.Link> : <Nav.Link as={Link} to="/login" className="text-light">Login</Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
