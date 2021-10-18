@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="bg-dark row text-light m-0">
             <div className="col-lg-6 p-5">
-                <h5>About HomeClinic</h5>
+                <h5 className="text-center">About HomeClinic</h5>
                 <small className="text-secondary">
                     HomeClinic is an online based treatment system where it services people by virtual meeting with the doctor. It's a 24/7 service system and we have dedicated experienced doctors so that a patient get the best treatment over online. We also have physical meeting schedule where the patient can visit a doctor taking a schedule.
                 </small> <br /> <hr />
@@ -18,22 +18,24 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-6 p-5">
-                <h5 >News Letter Sign Up</h5>
-                <small className="text-muted text-wrap">Stay updated with latest news from us.</small>
+                <div className="text-center">
+                    <h5 >News Letter Sign Up</h5>
+                    <small className="text-muted text-wrap">Stay updated with latest news from us.</small>
+                </div>
                 <Form onSubmit={handleNewsLetter} className="w-50 mx-auto mt-3">
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3">
                         <Form.Control type="text" placeholder="Name" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3">
                         <Form.Control type="email" placeholder="Email" />
                     </Form.Group>
-                    <Button className="w-100" variant="secondary" type="submit">
+                    <Button className="w-100" variant="warning" type="submit">
                         Subscribe
                     </Button>
                 </Form>
             </div>
-            <hr className="mt-3" />
-            <p> &copy; Copyright 2021. All Rights Reserved by Md. Ruhul Amin Khan</p>
+            <hr />
+            <p className="text-center py-3"> &copy; Copyright 2021. All Rights Reserved by Md. Ruhul Amin Khan</p>
         </div>
     );
 };

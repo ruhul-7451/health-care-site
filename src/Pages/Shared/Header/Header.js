@@ -1,25 +1,34 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClinicMedical } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClinicMedical, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import useAuth from '../../../Hooks/useAuth';
 
 const homeClinic = <FontAwesomeIcon icon={faClinicMedical} />
+const logOutLogo = <FontAwesomeIcon icon={faSignOutAlt} />
 
 const Header = () => {
+    const { user, logOut } = useAuth();
+
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
-                <Container>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container >
                     <Navbar.Brand as={Link} to="/home">{homeClinic} HomeClinic</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ms-auto">
-                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-                            <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/about">Login</Nav.Link>
+                        <Nav className="ms-auto ">
+                            <Nav.Link className="text-light" as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link className="text-light" as={Link} to="/doctors">Doctors</Nav.Link>
+                            <Nav.Link className="text-light" as={Link} to="/about">About</Nav.Link>
+                            <Nav.Link className="text-light" as={Link} to="/services">Services</Nav.Link>
+
+                            {
+                                user.email && <Navbar.Text className="text-warning">
+                                    Hello! {user.displayName ? <span className="text-info">{user.displayName}</span> : <span className="text-info">User</span>}</Navbar.Text>
+                            }
+                            {user.email ? <Nav.Link as={Link} to="/home" onClick={logOut} className="btn btn-danger ms-3 text-light">{logOutLogo} Logout</Nav.Link> : <Nav.Link as={Link} to="/login" className="text-light">Login</Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
