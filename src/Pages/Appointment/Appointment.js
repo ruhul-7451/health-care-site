@@ -1,10 +1,12 @@
-import React from 'react';
-import { Button, Col, FloatingLabel, Form, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Col, FloatingLabel, Form, Modal, Row } from 'react-bootstrap';
 
 const Appointment = () => {
-    const handleFormSubmit = e => {
-        e.preventDefault();
-    }
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <div className="container mx-auto m-5">
             <h1 className="text-center p-2 text-primary mb-3">Make an Appointment</h1>
@@ -45,9 +47,26 @@ const Appointment = () => {
                         <Form.Group className="mb-3" id="formGridCheckbox">
                             <Form.Check type="checkbox" label="I agree with the terms and conditions" />
                         </Form.Group>
-                        <Button onClick={handleFormSubmit} variant="primary" type="submit">
-                            Submit
-                        </Button>
+                        <>
+                            <Button variant="primary" onClick={handleShow}>
+                                Set Appointment
+                            </Button>
+
+                            <Modal show={show} onHide={handleClose}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>Appointment Successful</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>Be prepare on you schedule and your selected doctor will reach you on time. Please click confirm to set the schedule.</Modal.Body>
+                                <Modal.Footer>
+                                    <Button variant="secondary" onClick={handleClose}>
+                                        Close
+                                    </Button>
+                                    <Button variant="success" onClick={handleClose}>
+                                        Confirm
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
+                        </>
                     </Form>
                 </Col>
             </Row>

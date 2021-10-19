@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import initializeFirebaseAuth from "../Firebase/Firebase.init";
 
 initializeFirebaseAuth();
-const googleProvider = new GoogleAuthProvider();
+
 const auth = getAuth();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
 
     const signInWithGoogle = () => {
+        const googleProvider = new GoogleAuthProvider();
         return signInWithPopup(auth, googleProvider)
     };
 
@@ -40,18 +41,17 @@ const useFirebase = () => {
 
     const logOut = () => {
         signOut(auth)
-            .then(() => {
-                setUser({});
-            })
+            .then(() => { })
             .catch((error) => {
                 console.log(error);
-            });
+            })
     };
 
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            user ? setUser(user) : setUser({});
-        })
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
+            user ? setUser(user) : setUser({})
+        });
+        return () => unsubscribed;
     }, []);
 
     return {
