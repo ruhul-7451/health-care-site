@@ -3,12 +3,19 @@ import { Form, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import useAuth from '../../Hooks/useAuth';
+import { useHistory, useLocation } from 'react-router';
 const googleLogo = <FontAwesomeIcon icon={faGoogle} />
 
 const Login = () => {
     const [check, setCheck] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirectUrl = location.state?.from || "/home"
+
+    const { signInWithGoogle, registerUser, loginUser } = useAuth();
 
     const handleChange = e => {
         e.target.checked ? setCheck(true) : setCheck(false);
@@ -22,39 +29,47 @@ const Login = () => {
     const handleUserPass = (e) => {
         setPassword(e.target.value);
     }
-    const createUserLogin = (uEmail, uPass) => {
-        registerUser(uEmail, uPass);
-    }
-    const letUserLogin = (uEmail, uPass) => {
-        loginUser(uEmail, uPass);
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(() => {
+                history.push(redirectUrl);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage);
+            });
     }
 
-    const { signInWithGoogle, registerUser, loginUser } = useAuth();
+    const handleEmailPassRegister = () => {
+        registerUser(email, password);
+    }
+
+    const handleEmailPassLogin = () => {
+        loginUser(email, password);
+    }
 
     return (
         <div className="">
             <div className="col-lg-3 col-md-6 m-5 shadow p-3 rounded mx-auto">
                 <h3 className="pb-3 text-center">Please {check ? "Register" : "Login"}</h3>
                 <Form onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="my-3">
                         <Form.Control onBlur={handleUserEmail} type="email" placeholder="Enter email" />
-                        {/* <Form.Text className="text-muted">
-                            Please! Enter a Valid Email
-                        </Form.Text> */}
                     </Form.Group>
-                    <Form.Group className="mb-3">
+                    <Form.Group>
                         <Form.Control onBlur={handleUserPass} type="password" placeholder="Password" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    <Form.Group className="my-3">
                         <Form.Check onChange={handleChange} type="checkbox" label="Don't Have an Account" />
                     </Form.Group>
-
-                    <Form.Group className="text-center">
+                    <Form.Group className="text-center my-3">
                         {
-                            check ? <Button className="w-75 mb-3" variant="primary" onClick={() => createUserLogin(email, password)}>Register</Button> : <Button className="w-75 mb-3" variant="primary" onClick={() => letUserLogin(email, password)}>Login</Button>
+                            check ? <Button className="w-75 mb-3" variant="primary" onClick={handleEmailPassRegister}>Register</Button> : <Button className="w-75 mb-3" variant="primary" onClick={handleEmailPassLogin}>Login</Button>
                         }
-                        <Button onClick={signInWithGoogle} className="w-75" variant="primary" type="submit">
+
+                        <Button onClick={handleGoogleSignIn} className="w-75" variant="primary" type="submit">
                             {googleLogo} Google Sign In
                         </Button>
                     </Form.Group>

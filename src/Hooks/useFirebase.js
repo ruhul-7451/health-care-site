@@ -10,22 +10,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
 
     const signInWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user);
-                console.log(result.user);
-                // ...
-            }).catch((error) => {
-                // Handle Errors here.
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // The email of the user's account used.
-                const email = error.email;
-                // The AuthCredential type that was used.
-                const credential = GoogleAuthProvider.credentialFromError(error);
-                // ...
-                console.log(errorCode, errorMessage, email, credential);
-            });
+        return signInWithPopup(auth, googleProvider)
     };
 
     const registerUser = (email, password) => {
@@ -33,16 +18,14 @@ const useFirebase = () => {
             .then((result) => {
                 setUser(result.user);
                 console.log(result.user);
-                // ...
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                // ..
                 console.log(errorCode, errorMessage);
             });
-
     };
+
     const loginUser = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
@@ -53,29 +36,21 @@ const useFirebase = () => {
                 const errorMessage = error.message;
                 console.log(errorCode, errorMessage);
             });
-
     }
 
     const logOut = () => {
         signOut(auth)
             .then(() => {
                 setUser({});
-                // Sign-out successful.
             })
             .catch((error) => {
-                // An error happened.
                 console.log(error);
             });
     };
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUser(user);
-
-            } else {
-                setUser({});
-            }
+            user ? setUser(user) : setUser({});
         })
     }, []);
 
@@ -86,7 +61,6 @@ const useFirebase = () => {
         loginUser,
         logOut
     }
-
 }
 
 export default useFirebase;
