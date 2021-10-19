@@ -32,8 +32,8 @@ const Login = () => {
     const { signInWithGoogle, registerUser, loginUser } = useAuth();
 
     return (
-        <div>
-            <div className="w-25 m-5 shadow p-3 rounded mx-auto">
+        <div className="">
+            <div className="col-lg-3 col-md-6 m-5 shadow p-3 rounded mx-auto">
                 <h3 className="pb-3 text-center">Please {check ? "Register" : "Login"}</h3>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3">
