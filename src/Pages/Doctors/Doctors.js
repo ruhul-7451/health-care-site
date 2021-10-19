@@ -12,8 +12,8 @@ const Doctors = () => {
     }, [])
     return (
         <div className="container my-3">
-            <h2 className="bg-warning text-center p-2 mb-3">Meet our Medical Specialists</h2>
-            <Row xs={1} md={2} lg={4} className="g-4">
+            <h2 className=" rounded bg-dark text-warning text-center text-uppercase p-3 mb-3">Meet Our Doctors</h2>
+            <Row xs={1} md={2} lg={4} className="g-4 container">
                 {
                     doctors.map(doctor => <Doctor
                         key={doctor.docId}

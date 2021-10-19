@@ -1,8 +1,16 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router';
+const info = <FontAwesomeIcon icon={faInfoCircle} />
 
 const Doctor = ({ doctor }) => {
-    const { docName, docImage, expertize, docProfile } = doctor;
+    const { docId, docName, docImage, expertize, docProfile } = doctor;
+    const history = useHistory();
+    const handleDoctor = () => {
+        history.push(`/doctor/${docId}`)
+    }
     return (
         <div>
             <Col>
@@ -15,6 +23,9 @@ const Doctor = ({ doctor }) => {
                             {docProfile}
                         </Card.Text>
                     </Card.Body>
+                    <Card.Footer className="text-center">
+                        <Button onClick={handleDoctor} variant="primary">See Details {info}</Button>
+                    </Card.Footer>
                 </Card>
             </Col>
 
