@@ -22,7 +22,7 @@ const Service = ({ service }) => {
                         {/* <Card.Text>{serviceDescription}</Card.Text> */}
                     </Card.Body>
                     <Card.Footer className="text-center">
-                        <Button onClick={handleService} variant="primary">See Details {info}</Button>
+                        <Button onClick={handleService} variant="warning">See Details {info}</Button>
                     </Card.Footer>
                 </Card>
             </Col>

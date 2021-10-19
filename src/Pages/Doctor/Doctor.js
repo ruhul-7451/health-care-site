@@ -19,12 +19,12 @@ const Doctor = ({ doctor }) => {
                     <Card.Body>
                         <Card.Title>{docName}</Card.Title>
                         <Card.Title><small>{expertize}</small></Card.Title>
-                        <Card.Text>
+                        {/* <Card.Text>
                             {docProfile}
-                        </Card.Text>
+                        </Card.Text> */}
                     </Card.Body>
                     <Card.Footer className="text-center">
-                        <Button onClick={handleDoctor} variant="primary">See Details {info}</Button>
+                        <Button onClick={handleDoctor} variant="warning">See Details {info}</Button>
                     </Card.Footer>
                 </Card>
             </Col>

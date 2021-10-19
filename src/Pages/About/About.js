@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="container shadow rounded p-5">
-            <h1 className="text-info">About e-SHEBA</h1>
+        <div className="container bg-primary text-light shadow rounded p-5">
+            <h1 className="text-primary rounded bg-light p-3">About e-SHEBA</h1>
             <article>
                 As technology continues its rapid advance across all industries around the world, medical service terms is really beginning to see the benefits. Hospital management software has come a long way in helping patients improve the way their health and sickness failures, and there is little doubt as to its casual impact.
 
