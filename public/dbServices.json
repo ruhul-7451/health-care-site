@@ -8,43 +8,43 @@
     {
         "serviceId": 2,
         "serviceImg": "https://i.ibb.co/PYxfSBJ/service-2.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "Emergency ICU Vehicle",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     },
     {
         "serviceId": 3,
         "serviceImg": "https://i.ibb.co/f1DxK2L/service-3.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "OnCall Doctor Visit",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     },
     {
         "serviceId": 4,
         "serviceImg": "https://i.ibb.co/wWLYWmS/service-4.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "Dentist Support",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     },
     {
         "serviceId": 5,
         "serviceImg": "https://i.ibb.co/ynLMPnq/service-5.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "Pharmacy Research",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     },
     {
         "serviceId": 6,
         "serviceImg": "https://i.ibb.co/9t3R2T3/service-6.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "Children Care/Specialist",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     },
     {
         "serviceId": 7,
         "serviceImg": "https://i.ibb.co/qBdB4dP/service-7.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "Blood Bank",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     },
     {
         "serviceId": 8,
         "serviceImg": "https://i.ibb.co/WpdLNxq/service-8.jpg",
-        "serviceTitle": "Qualified Doctors",
+        "serviceTitle": "Rehub Center",
         "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
     }
 ]

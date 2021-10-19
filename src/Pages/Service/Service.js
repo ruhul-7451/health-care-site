@@ -6,7 +6,7 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 const info = <FontAwesomeIcon icon={faInfoCircle} />
 
 const Service = ({ service }) => {
-    const { serviceId, serviceImg, serviceTitle, serviceDescription } = service;
+    const { serviceId, serviceImg, serviceTitle } = service;
 
     const history = useHistory();
     const handleService = () => {
@@ -19,7 +19,6 @@ const Service = ({ service }) => {
                     <Card.Img variant="top" src={serviceImg} />
                     <Card.Body>
                         <Card.Title>{serviceTitle}</Card.Title>
-                        {/* <Card.Text>{serviceDescription}</Card.Text> */}
                     </Card.Body>
                     <Card.Footer className="text-center">
                         <Button onClick={handleService} variant="warning">See Details {info}</Button>
