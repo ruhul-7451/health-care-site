@@ -28,7 +28,7 @@ const Header = () => {
                                     Hello! {user?.displayName && <span className="text-warning">{user.displayName}</span>}</Navbar.Text>
                             }
                             {
-                                user.email ? <Nav.Link as={Link} to="/home" onClick={logOut} className="btn btn-danger ms-3 text-light">{logOutLogo} Logout</Nav.Link> : <Nav.Link as={Link} to="/login" className="text-light">Login</Nav.Link>
+                                user.email ? <Nav.Link as={Link} to="/home" onClick={logOut} className="btn btn-danger mx-3 text-light">{logOutLogo} Logout</Nav.Link> : <Nav.Link as={Link} to="/login" className="text-light">Login</Nav.Link>
                             }
                         </Nav>
                     </Navbar.Collapse>
