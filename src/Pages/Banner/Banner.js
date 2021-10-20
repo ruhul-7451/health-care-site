@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <Carousel className="container-lg" >
+        <Carousel>
             <Carousel.Item>
                 <img
                     className="d-block w-100 img-fluid"

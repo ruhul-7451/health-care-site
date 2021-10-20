@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 const info = <FontAwesomeIcon icon={faInfoCircle} />
 
 const Doctor = ({ doctor }) => {
-    const { docId, docName, docImage, expertize, docProfile } = doctor;
+    const { docId, docName, docImage, expertize } = doctor;
     const history = useHistory();
     const handleDoctor = () => {
         history.push(`/doctor/${docId}`)
@@ -14,18 +14,15 @@ const Doctor = ({ doctor }) => {
     return (
         <div>
             <Col>
-                <Card>
+                <Card className="shadow">
                     <Card.Img variant="top" src={docImage} />
                     <Card.Body>
                         <Card.Title>{docName}</Card.Title>
-                        <Card.Title><small>{expertize}</small></Card.Title>
-                        {/* <Card.Text>
-                            {docProfile}
-                        </Card.Text> */}
+                        <Card.Title><small className="text-secondary">{expertize}</small></Card.Title>
                     </Card.Body>
-                    <Card.Footer className="text-center">
-                        <Button onClick={handleDoctor} variant="warning">See Details {info}</Button>
-                    </Card.Footer>
+                    <Card.Body className="text-center">
+                        <Button onClick={handleDoctor} variant="outline-primary w-100">See Details {info}</Button>
+                    </Card.Body>
                 </Card>
             </Col>
 

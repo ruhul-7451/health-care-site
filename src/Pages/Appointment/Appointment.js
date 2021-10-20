@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import { Button, Col, FloatingLabel, Form, Modal, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const Appointment = () => {
 
     const [show, setShow] = useState(false);
+    const [checked, setChecked] = useState('')
+    const history = useHistory()
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+
+    const handleCheck = e => {
+        setChecked(e.target.checked);
+    }
+    const handleShow = () => {
+        setShow(true);
+        checked ? history.push('/confirmation') : setShow(true)
+    }
 
     return (
         <div className="container mx-auto m-5">
@@ -44,7 +54,7 @@ const Appointment = () => {
                                 />
                             </FloatingLabel>
                         </Form.Group>
-                        <Form.Group className="mb-3" id="formGridCheckbox">
+                        <Form.Group className="mb-3" onChange={handleCheck}>
                             <Form.Check type="checkbox" label="I agree with the terms and conditions" />
                         </Form.Group>
                         <>
@@ -54,15 +64,12 @@ const Appointment = () => {
 
                             <Modal show={show} onHide={handleClose}>
                                 <Modal.Header closeButton>
-                                    <Modal.Title>Appointment Successful</Modal.Title>
+                                    <Modal.Title className="text-danger">Important!</Modal.Title>
                                 </Modal.Header>
-                                <Modal.Body>Be prepare on you schedule and your selected doctor will reach you on time. Please click confirm to set the schedule.</Modal.Body>
+                                <Modal.Body>Please agree to our terms and conditions</Modal.Body>
                                 <Modal.Footer>
-                                    <Button variant="secondary" onClick={handleClose}>
-                                        Close
-                                    </Button>
                                     <Button variant="success" onClick={handleClose}>
-                                        Confirm
+                                        Ok
                                     </Button>
                                 </Modal.Footer>
                             </Modal>

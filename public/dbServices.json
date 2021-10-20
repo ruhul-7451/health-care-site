@@ -3,48 +3,64 @@
         "serviceId": 1,
         "serviceImg": "https://i.ibb.co/RDbd4TL/service-1.jpg",
         "serviceTitle": "Qualified Doctors",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceDescription": "Primary care is the majority of healthcare. It includes checkups and screenings, managing chronic illnesses, and minor illnesses and injuries. Primary care focuses on the whole person. Ideally, your primary care provider knows you personally, has all your records, and knows your healthcare preferences. They should also understand the life circumstances and challenges that influence your health – your job, family, school, nutrition, housing, and culture.",
+        "importance": "Patients are unique, and so are their health needs. The best primary care is delivered by a team of professionals with the patient as the center of decision-making. We may have a shortage of primary care physicians in the future, but as we move to team-based care, we likely have plenty of other professionals to fill the gap. Teams may include doctors, but also nurse practitioners, physician assistants, nurses, and aides. Other team members could include social workers, community health workers, nutritionists, pharmacists, mental health, and substance abuse specialists, as needed for each patient.",
+        "getTheCare": "The medical professionals we help range from chiropractors, surgeons and oncologists to veterinarians, pharmacists and dentists. All these professionals practice medicine in vastly different ways. They have disparate job descriptions, too. But one thing they all have in common is a greater than average risk of a liability suit because of their specialized professions."
     },
     {
         "serviceId": 2,
         "serviceImg": "https://i.ibb.co/PYxfSBJ/service-2.jpg",
         "serviceTitle": "Emergency ICU Vehicle",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceDescription": "“All it takes is for someone to come in from a motor vehicle accident or whatnot to fill those beds right back up. It changes literally hour to hour sometimes,” Janice Hamscher, Executive Vice President and Chief Nursing Officer at Altru Health said. Of the nearly150 patients currently in a North Dakota ICU, only around 20 percent of those patients have an active COVID-19 infection, with a few more still battling the unfortunate side-effects of the virus.",
+        "importance": "According to data from the U.S. Department of Health and Human Services, emergency rooms near Little Elm reported different ICU occupancy rates from Oct. 1-7 than those from Sept. 24-30. Baylor Scott & White Centennial in Frisco, which reported 99% in the latter week, is now reporting 100% occupancy for the current week. Conversely, Texas Health Hospital Frisco is reporting 90% this week compared to last week’s 95%.Texas Health Presbyterian Denton and Medical City Denton respectively reported occupancies of 100% and 96%, a change from last week’s respective reports of 98% and 99%.",
+        "getTheCare": "A pedestrian sustained minor injuries after being struck by a vehicle Thursday afternoon, a spokesperson with the town of Little Elm confirmed Friday.The incident took place on Hart Road, in front of the Little Elm Athletic Complex. Crowdsourcing names. Little Elm ISD is inviting community input for the names of two future facilities. Per the district, Lakeside Middle School will be converted into an administrative building, while the Zellars Center for Learning and Leadership will be renovated and turned into an “Early Childhood Center.”"
     },
     {
         "serviceId": 3,
         "serviceImg": "https://i.ibb.co/f1DxK2L/service-3.jpg",
         "serviceTitle": "OnCall Doctor Visit",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceDescription": "At the height of the covid-19 pandemic, people often relied on telemedicine for doctor visits. Now, insurers are betting that some patients liked it enough to embrace new types of health coverage that encourages video visits — or outright insists on them. Priority Health in Michigan, for example, offers coverage requiring online visits first for nonemergency primary care. Harvard Pilgrim Health Care, selling to employers in Connecticut, Maine and New Hampshire, has a similar plan.",
+        "importance": "For decades, the annual physical and its attendant blood tests, or routine labs, have been mainstays of American medicine. However, in recent years, the message from some in medicine has effectively been: Don't bother. In 2015, Ezekiel Emanuel, an oncologist and professor of medicine and bioethics at the University of Pennsylvania, pointedly told Americans: Since 2013, the Society of General Internal Medicine has recommended against annual general health checks for patients who have no active symptoms or concerns. Disruptions from the COVID-19 pandemic have only further discouraged people from making regular doctor's visits.",
+        "getTheCare": "Over the past year, the COVID-19 pandemic has forced some big changes in the world of medicine, making telehealth much more widely available than ever before. Although the pandemic is continually shifting, it looks like the telehealth expansion is here to stay. Read on for a detailed overview of telehealth and what to expect from a virtual doctor’s visit."
     },
     {
         "serviceId": 4,
         "serviceImg": "https://i.ibb.co/wWLYWmS/service-4.jpg",
         "serviceTitle": "Dentist Support",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceDescription": "Dental care is health care, however, due to current VA eligibility restrictions, the vast majority of America’s veterans are prevented from accessing this benefit – making it critical that we expand coverage,” said Sen. Booker. “This important legislation would eliminate current restrictions to ensure that the VA has the necessary staff and facilities in all states to provide dental care to veterans. We owe our veterans a debt of gratitude that can never be repaid, and this legislation is a necessary step forward in honoring their service and sacrifice.",
+        "importance": "Dental care is a key part of comprehensive health care, and an essential part of fulfilling our promise to holistically address the needs of veterans in Hawaii and across the country,” said Sen. Hirono. “This legislation would make needed and overdue updates to the care that veterans can receive through VA.",
+        "getTheCare": "Today, dental care is not treated like the vital health care it is and only a small fraction of veterans are eligible to receive dental care through the VA because of stringent eligibility requirements,” said Sen. Gillibrand. “With the VA’s Dental Insurance Program set to expire at the end of the year, now is the time to prioritize dental health care and pass the Veterans Dental Care Eligibility Expansion and Enhancement Act of 2021. This bill would help eliminate eligibility restrictions and make dental care more affordable and accessible to all veterans."
     },
     {
         "serviceId": 5,
         "serviceImg": "https://i.ibb.co/ynLMPnq/service-5.jpg",
-        "serviceTitle": "Pharmacy Research",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceTitle": "Medicine Research",
+        "serviceDescription": "A fundamental concept of Rosalind Franklin University’s Innovation and Research Park in North Chicago is providing a place where scientists from academia and the corporate world can work side by side, collaborating to provide cutting edge diagnostics and therapeutics.",
+        "importance": "The incubator is for startup businesses. Kaplan said along with working on their scientific research, they are mentored on the legal and organizational skills necessary to get their operation going. Once launched, they could move into one of the areas reserved for the private sector.",
+        "getTheCare": "A key concept of the research park is putting both the school’s scientists and those from the private sector on the same floor so they can collaborate more easily with each other, creating a synergistic atmosphere. Kaplan said the incubator occupies a third of one of the floors."
     },
     {
         "serviceId": 6,
         "serviceImg": "https://i.ibb.co/9t3R2T3/service-6.jpg",
         "serviceTitle": "Children Care/Specialist",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceDescription": "Our mission at WVU Medicine Reynolds Memorial Hospital has always been about bringing world-class healthcare to our patients in our own community. This affiliation with WVU Medicine Children’s will make good on this commitment by giving access to this level of care to the children in our region. As a pediatrician, and parent, I recognize that our children’s health and well-being has to be our top priority.",
+        "importance": "All of that care, anything that happens in Morgantown, will be instantaneously uploaded to that medical record so our local physicians can see immediately what was being provided with the care in Morgantown so that they can make local decisions. ",
+        "getTheCare": "A current resource she highlighted was the Clackamas County Early Learning Hub, one of 16 learning hubs across the state comprised of a wide range of community partners dedicated to fostering early childhood education by providing support programs for children who are prenatal to 6 years old and their families."
     },
     {
         "serviceId": 7,
         "serviceImg": "https://i.ibb.co/qBdB4dP/service-7.jpg",
         "serviceTitle": "Blood Bank",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceDescription": "The nonprofit blood supplier has a two-day supply on hand of type O, often used in emergencies because it is compatible with all blood types. The supply is at its lowest levels since May 2020, a representative said.",
+        "importance": "The pandemic continues to result in canceled blood drives, which affects the supply, she said. Some people also erroneously believe they can’t donate blood after getting a COVID-19 or flu shot, reducing the number of donors. However, there is no waiting period.",
+        "getTheCare": "The shortage is both local and nationwide, she said. Vitalant supplies blood to 900 hospitals around the country. Vitalant also is experiencing a critical shortage of platelets, tiny cells that help blood clot. Roughly 50 percent of platelets are given to cancer patients undergoing treatment. Platelets must be transfused within about a week of donation."
     },
     {
         "serviceId": 8,
         "serviceImg": "https://i.ibb.co/WpdLNxq/service-8.jpg",
-        "serviceTitle": "Rehub Center",
-        "serviceDescription": "They have completed a medical degree and foundation training, and have anywhere up to eight years' experience working as a hospital doctor, depending on their specialty, or up to three years in general practice."
+        "serviceTitle": "Rehabilitation Center",
+        "serviceDescription": "Almost two years after COVID-19 emerged, there's still much that isn't fully understood about the coronavirus. But it's become clear that about 1 in 10 infected people will go on to experience lingering health problems 12 or more weeks after first becoming ill.",
+        "importance": "These patients can't navigate life without feeling exhausted. We're trying to get them back to baseline and then back to doing the physical things they used to do. Some do fine in their home but can't exercise like they used to. But a lot of people with long COVID don't understand their symptoms or even know there's something they can do about them.",
+        "getTheCare": "Everyone is individual, and what to expect is very hard to pinpoint. We had one patient with COVID-19 hospitalized here for more than 70 days, so their weakness level was extreme. Others who haven't been hospitalized have fewer obstacles to recovery. Many long COVID patients continue having breathing difficulties, but rehab also touches on aspects of recovery such as nutrition, sleep and stress."
     }
 ]

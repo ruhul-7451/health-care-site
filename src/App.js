@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import Appointment from './Pages/Appointment/Appointment';
+import ConfirmAppointment from './Pages/Appointment/ConfirmAppointment/ConfirmAppointment';
 import DoctorDetails from './Pages/DoctorDetails/DoctorDetails';
 import Doctors from './Pages/Doctors/Doctors';
 import Home from './Pages/Home/Home';
@@ -15,7 +16,7 @@ import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
-    <div className="bg-light">
+    <div style={{ backgroundColor: "#EBF5FF" }}>
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
@@ -41,6 +42,9 @@ function App() {
             <PrivateRoute path="/appointment">
               <Appointment></Appointment>
             </PrivateRoute>
+            <Route path="/confirmation">
+              <ConfirmAppointment></ConfirmAppointment>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>

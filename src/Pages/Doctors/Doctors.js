@@ -11,9 +11,9 @@ const Doctors = () => {
             .then(data => setDoctors(data))
     }, [])
     return (
-        <div className="container my-3">
-            <h2 className=" rounded bg-primary text-light text-center text-uppercase p-3 mb-3">Meet Our Doctors</h2>
-            <Row xs={1} md={2} lg={3} className="g-4 container">
+        <div className="container my-3 p-5 shadow" style={{ backgroundColor: "#F8F9F9" }}>
+            <h2 className=" rounded bg-info text-light text-center text-uppercase p-3 mb-3">Meet Our Doctors</h2>
+            <Row xs={1} md={2} lg={3} className="g-4">
                 {
                     doctors.map(doctor => <Doctor
                         key={doctor.docId}

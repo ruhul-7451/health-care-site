@@ -15,14 +15,14 @@ const Service = ({ service }) => {
     return (
         <div>
             <Col>
-                <Card>
+                <Card className="shadow">
                     <Card.Img variant="top" src={serviceImg} />
-                    <Card.Body>
+                    <Card.Header>
                         <Card.Title>{serviceTitle}</Card.Title>
-                    </Card.Body>
-                    <Card.Footer className="text-center">
-                        <Button onClick={handleService} variant="warning">See Details {info}</Button>
-                    </Card.Footer>
+                    </Card.Header>
+                    <Card.Header className="text-center">
+                        <Button onClick={handleService} variant="warning text-white w-100">See Details {info}</Button>
+                    </Card.Header>
                 </Card>
             </Col>
         </div>

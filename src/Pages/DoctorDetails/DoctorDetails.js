@@ -18,7 +18,7 @@ const DoctorDetails = () => {
     return (
         <div>
             {findDoctor.map(showDoctors => <ShowDoctors
-                key={showDoctors.serviceId}
+                key={showDoctors.docId}
                 showDoctors={showDoctors}
             ></ShowDoctors>)}
         </div>
